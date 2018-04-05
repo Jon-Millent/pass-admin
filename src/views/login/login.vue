@@ -57,6 +57,12 @@
       resetForm(formName) {
         this.$refs[formName].resetFields();
       }
+    },
+    mounted(){
+      this.$api.login({
+        username: '123456',
+        password: '123456'
+      })
     }
   }
 </script>
